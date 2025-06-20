@@ -4,7 +4,9 @@ $dbHost = getenv('DB_HOST');
 $dbName = "pruebas";         
 $dbUser = getenv('DB_USER');
 $dbPass = getenv('DB_PASSWORD');
-
+echo $dbHost;
+echo $dbUser;
+echo $dbPass;
 if (!$dbHost || !$dbUser || $dbPass === false) {
     throw new \RuntimeException('Faltan variables de entorno para la conexión a la base de datos.');
 }
